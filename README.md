@@ -1,5 +1,5 @@
-.NET-Proxy
-==========
+.NET Proxy (netProxy)
+=====================
 
 ASP.NET and JavaScript proxies for accessing external content.
 
