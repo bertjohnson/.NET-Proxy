@@ -23,14 +23,16 @@ Another common goal is to incorporate content from third-party sites, but JavaSc
 
 **Example**
 
-`// Pass in the URL for our proxy ASPX page
+````javascript
+// Pass in the URL for our proxy ASPX page
 var bingProxy = new netProxy("http://bing.com");
 bingProxy.onreadystatechange = function(){
 if (bingProxy.readyState == 4)
 alert('Source code for http://bing.com:\r\n\r\n' +bingProxy.responseText);
 };
 bingProxy.open("GET", "http://bing.com", true);
-bingProxy.send();`
+bingProxy.send();
+````
 
 History
 =======
@@ -40,7 +42,7 @@ For previous releases and context, [view this project archive on CodePlex](https
 License
 =======
 
-Copyright © 2011-2015 [Bert Johnson](https://bertjohnson.com)
+Copyright © 2011-2017 [Bert Johnson](https://bertjohnson.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
