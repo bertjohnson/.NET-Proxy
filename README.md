@@ -14,7 +14,7 @@ Sometimes your web or intranet site is served over SSL but you'd like to include
 
 **Example**
 
-Requests for `http://example.com` would become requests for `netproxy.aspx?http://example.com`.
+Requests for `https://example.com` would become requests for `netproxy.aspx?https://example.com`.
 
 JavaScript Proxy
 ================
@@ -25,12 +25,12 @@ Another common goal is to incorporate content from third-party sites, but JavaSc
 
 ````javascript
 // Pass in the URL for our proxy ASPX page
-var bingProxy = new netProxy("http://bing.com");
+var bingProxy = new netProxy("https://www.bing.com/");
 bingProxy.onreadystatechange = function(){
 if (bingProxy.readyState == 4)
-alert('Source code for http://bing.com:\r\n\r\n' +bingProxy.responseText);
+	alert('Source code for https://www.bing.com:\r\n\r\n' + bingProxy.responseText);
 };
-bingProxy.open("GET", "http://bing.com", true);
+bingProxy.open("GET", "https://www.bing.com/", true);
 bingProxy.send();
 ````
 

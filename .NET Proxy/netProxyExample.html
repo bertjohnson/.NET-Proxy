@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 	<head>
 		<style type="text/css">
 			BODY > DIV{
@@ -11,13 +11,13 @@
 
 		<script type="text/javascript" src="Scripts/netProxy.js"></script>
 		<script type="text/javascript">
-		    // Retrieve http://google.com
+		    // Retrieve https://www.google.com
 		    var googleProxy = new netProxy("netProxy.aspx");
 		    googleProxy.onreadystatechange = function () {
 		        if (googleProxy.readyState == 4)
 		            document.getElementById('googleContent').innerHTML = googleProxy.responseText;
 		    };
-		    googleProxy.open("GET", "http://google.com", true);
+		    googleProxy.open("GET", "https://www.google.com", true);
 		    googleProxy.send();
 
 		    // Retrieve https://bertjohnson.com
@@ -31,11 +31,11 @@
 		</script>
 	</head>
 	<body>
-		<h2>http://google.com/</h2>
+		<h2>https://www.google.com/</h2>
 		<div id='googleContent'>
 		</div>
 
-		<h2>http://bertjohnson.com/</h2>
+		<h2>https://bertjohnson.com/</h2>
 		<div id='bertJohnsonComContent'>
 		</div>
 	</body>
